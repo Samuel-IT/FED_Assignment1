@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotton ON Revamp Website</title>
+    <link rel="stylesheet" href="Assignment 1 CSS.css">
+    <script src="Assignment 1 JS.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src= "images/Cotton_On_logo.png.png"alt="Brand Logo" class="Logo"> 
+        <nav class="main-nav">
+            <ul>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <nav class="header-buttons">
+        <a href="index.html"><img src="images/home-button.png" alt="Home button" class="icon"></a>
+        <a href="Shopping Cart.html"><img src="images/shopping-cart-button.png" alt="Shopping Cart" class="icon"></a>
+        </nav>
+
+    </header>
+    <!--background-->
+    <section class="Background" style="background-image: url('images/slide 2.png.jpg');">
+        <h1>MEN</h1>
+    </section>
+    <!--content-->
+    <div class="filter-bar">
+        <!-- Categories Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">
+                <span class="filter-item">Categories</span><span class="arrow">▲</span>
+            </button>
+            <div class="dropdown-content">
+                <button class="dropdown-item">T-Shirts</button>
+                <button class="dropdown-item">Short Sleeve</button>
+                <button class="dropdown-item">Long Sleeve</button>
+                <button class="dropdown-item">Pants</button>
+                <button class="dropdown-item">Jackets</button>
+            </div>
+        </div>
+    
+        <!-- Sort Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">
+                <span class="filter-item">Sort</span><span class="arrow">▲</span>
+            </button>
+            <div class="dropdown-content">
+                <button class="dropdown-item">New In</button>
+                <button class="dropdown-item">Most Popular</button>
+                <button class="dropdown-item">Price High to Low</button>
+                <button class="dropdown-item">Price Low to High</button>
+            </div>
+        </div>
+    
+        <!-- Size Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">
+                <span class="filter-item">Size</span><span class="arrow">▲</span>
+            </button>
+            <div class="dropdown-content">
+                <button class="dropdown-item">6 / 2XS</button>
+                <button class="dropdown-item">8 / XS</button>
+                <button class="dropdown-item">10 / S</button>
+                <button class="dropdown-item">12 / M</button>
+                <button class="dropdown-item">14 / L</button>
+                <button class="dropdown-item">16 / XL</button>
+            </div>
+        </div>
+    
+        <!-- Color Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">
+                <span class="filter-item">Colour</span><span class="arrow">▲</span>
+            </button>
+            <div class="dropdown-content">
+                <button class="dropdown-item">White</button>
+                <button class="dropdown-item">Blue</button>
+                <button class="dropdown-item">Grey</button>
+                <button class="dropdown-item">Green</button>
+                <button class="dropdown-item">Red</button>
+                <button class="dropdown-item">Black</button>
+            </div>
+        </div>
+    </div>
+    <!--product-->
+    <div class="product-container">
+        <div class="product-item">
+            <img src="images/boy picture short sleeve.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 1</h3>
+                    <p>$29.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product2.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 2</h3>
+                    <p>$19.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product3.jpg" alt="Product 3">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 3</h3>
+                    <p>$39.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="Add to Cart.html" alt="Product 4">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 4</h3>
+                    <p>$49.99</p>
+                </div>
+                <a href="cart_page.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product1.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 1</h3>
+                    <p>$29.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product2.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 2</h3>
+                    <p>$19.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product3.jpg" alt="Product 3">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 3</h3>
+                    <p>$39.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="Add to Cart.html" alt="Product 4">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 4</h3>
+                    <p>$49.99</p>
+                </div>
+                <a href="cart_page.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product1.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 1</h3>
+                    <p>$29.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product2.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 2</h3>
+                    <p>$19.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product3.jpg" alt="Product 3">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 3</h3>
+                    <p>$39.99</p>
+                </div>
+                <a href="Add to Cart.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="Add to Cart.html" alt="Product 4">
+            <div class="product-info">
+                <div class="product-text">
+                    <h3>Product 4</h3>
+                    <p>$49.99</p>
+                </div>
+                <a href="cart_page.html">
+                    <img class="add-to-cart" src="images/add to cart.png" alt="Add to Cart">
+                </a>
+            </div>
+        </div>
+        <!-- Repeat the product-item blocks for more products -->
+    </div>
+    <footer>
+        <div class="footer-container">
+          <!-- Customer Care Section -->
+          <div id="customer-care" class="footer-links">
+            <h3>Customer Care</h3>
+            <ul>
+              <li><a href="https://help-sg.cottonon.com/hc/en-us">Help & Contact Us</a></li>
+              <li><a href="https://cottonon.com/SG/information-about-returns.html">Returns & Exchanges</a></li>
+              <li><a href="https://cottonon.com/SG/delivery-methods.html">Delivery</a></li>
+              <li><a href="https://cottonon.com/SG/buynowpaylater.html">Buy Now, Pay Later</a></li>
+              <li><a href="https://cottonon.com/SG/store-finder/">Find a Store</a></li>
+            </ul>
+          </div>
+      
+          <!-- About Us Section -->
+          <div id="about-us" class="footer-links">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="http://www.cottonongroup.com.au/">The Cotton On Group</a></li>
+              <li><a href="https://cottonon.com/SG/perks/welcome/">CottonOn & Co. Perks</a></li>
+              <li><a href="https://cottonongroup.com.au/the-good-we-do/cotton-on-foundation/">Cotton On Foundation</a></li>
+              <li><a href="http://cottonongroupcareers.com">Cotton On Careers</a></li>
+              <li><a href="http://www.cottonongroup.com.au/communities">Communities</a></li>
+              <li><a href="https://cottonon.com/SG/the-good/news/">Doing Good</a></li>
+              <li><a href="http://www.cottonongroup.com/news/">News</a></li>
+            </ul>
+          </div>
+      
+          <!-- Our Brands Section -->
+          <div id="footer-brands" class="footer-links">
+            <h4>Our Brands</h4>
+            <div class="row">
+                <!--brand Logos -->
+                <div class="logo">
+                    <a href="https://cottonon.com/SG/search/?cgid=womens-new-in" title="Go to Cotton On">
+                        <img src="images\Cotton On.png" alt ="Cotton On Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/cottononbody/" title="Go to Body">
+                        <img src="images\BODY.png" alt="Body Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/cottononkids/" title="Go to Kids">
+                        <img src="images\Kids.png" alt="Kids Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/co/women/womens-accessories/" title="Go to Rubi">
+                        <img src="images\RUBI.png" alt="Rubi Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/typo/" title="Go to Typo">
+                        <img src="images\TYPO.png" alt="Typo Logo" class="logo-img">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social Media Icons -->
+        <div id="social-media-icons">
+            <a href="https://www.instagram.com/cottonon/?hl=en" title="Follow us on Instagram">
+                <img src="images/Instagram_icon.png" alt="Instagram Icon">
+            </a>
+            <a href="https://x.com/cottonon?lang=en" title="Follow us on X">
+                <img src="images/x logo.png" alt="X Icon">
+            </a>
+            <a href="https://www.facebook.com/cottonon/" title="Follow us on Facebook">
+                <img src="images/facebook logo.png" alt="Facebook Icon">
+            </a>
+        </div>
+        <!-- Compliance Links Section -->
+        <div id="compliance-links-wrapper">
+            <div id="terms-and-conditions"><a href="https://cottonon.com/SG/terms.html">Terms & Conditions</a></div>
+            <div id="accessibility"><a href="https://cottonon.com/SG/accessibility.html">Accessibility</a></div>
+            <div id="privacy-policy"><a href="https://cottonon.com/SG/privacy-policy.html">Privacy Policy</a></div>
+          </div>
+      </footer>
+
+</body>
+</html>

@@ -339,7 +339,6 @@ body {
 
 /* Style for each product item */
 .product-item {
-    background-color: rgb(255, 255, 255,);
     border: 2px solid grey
 }
 
@@ -658,7 +657,6 @@ body {
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-items: left; /* Center align items */
     padding: 10px;
     margin-bottom: 10px; /* Reduced space between products */
 }
@@ -1168,7 +1166,6 @@ footer {
         position: relative;
         display: flex;
         justify-content: flex-start;
-        align-items: left; /* Center align items */
         margin-bottom: 10px; /* Reduced space between products */
         width: 100%;
         height: 250px;

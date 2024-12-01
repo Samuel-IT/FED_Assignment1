@@ -3,19 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <title>Cotton ON Revamp Website</title>
-    <link rel="stylesheet" href="Assignment 1 CSS2.css">
+    <link rel="stylesheet" href="Assignment 1 CSS.css">
     <script src="Assignment 1 JS.js" defer></script>
 </head>
-<div class="product-container">
-    <div class="product">
-        <h2>Item:T-Shirt</h2>
-        <p>Price per item: <span class="price">$20.00</span></p>
-        <div class="quantity-container">
-            <button id="decrease" class="quantity-btn">◀</button>
-            <input type="number" id="quantity" value="1" min="1">
-            <button id="increase" class="quantity-btn">▶</button>
+<header>
+    <img src= "images/Cotton_On_logo.png.png"alt="Brand Logo" class="Logo"> 
+    <nav class="main-nav">
+        <ul>
+            <li><a href="men.html">MEN</a></li>
+            <li><a href="women.html">WOMEN</a></li>
+            <li><a href="kids.html">KIDS</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+    <div class="dropdown-menu">
+      <a href="men.html">MEN</a>
+      <a href="women.html">WOMEN</a>
+      <a href="kids.html">KIDS</a>
+      <a href="about-us.html">ABOUT US</a>
+   </div>
+   <nav class="header-buttons">
+      <a href="index.html"><img src="images/home-button.png" alt="Home button" class="icon"></a>
+      <a href="Shopping Cart.html"><img src="images/shopping-cart-button.png" alt="Shopping Cart" class="icon"></a>
+      <button class="menu-toggle" aria-label="Toggle Menu"><img src="images/menu" alt="menu"width="45px" height="45px"></button> <!-- Hamburger Menu -->
+   </nav>
+
+</header>
+<body>
+    <div class="product-page">
+        <div class="product-layout">
+            <!-- Left Section: Images -->
+            <div class="image-container">
+                <img src="images/chosen kid 1.jpg" alt="Product 1">
+                <img src="images/chosen kid 2.jpg" alt="Product 2">
+                <img src="images/chosen kid 3.jpg" alt="Product 3">
+                <img src="images/chosen kid 4.jpg" alt="Product 4">
+            </div>
+
+            <!-- Right Section: Details -->
+            <div class="details-container">
+                <h1>Product Name</h1>
+                <p><strong>Price:</strong> $50.00</p>
+
+                <!-- Color Selection -->
+                <div class="color-selection">
+                    <h4>Select Color:</h4>
+                    <div class="color-boxes">
+                        <div class="color-box" style="background-color: black;" data-color="Black"></div>
+                        <div class="color-box" style="background-color: red;" data-color="Red"></div>
+                        <div class="color-box" style="background-color: blue;" data-color="Blue"></div>
+                        <div class="color-box" style="background-color: green;" data-color="Green"></div>
+                    </div>
+                    <p>Color: <span id="selected-color">Black</span></p>
+                </div>
+
+                <!-- Size Selector -->
+                <div class="size-selector">
+                    <p><strong>Size:</strong></p>
+                    <div class="size-options">
+                        <div class="size-box" data-size="XS">XS</div>
+                        <div class="size-box" data-size="S">S</div>
+                        <div class="size-box" data-size="M">M</div>
+                        <div class="size-box" data-size="L">L</div>
+                        <div class="size-box" data-size="XL">XL</div>
+                    </div>
+                    <p id="selected-size">Size: M</p>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button class="quantity-btn" id="increase">+</button>
+                </div>
+
+                <!-- Total Price -->
+                <p id="total-price"><strong>Total:</strong> $50.00</p>
+                <a href="Shopping Cart.html" class="add-to-cart-btn">Add to Cart</a>
+            </div>
         </div>
-        <p>Total: <span id="total-price">$20.00</span></p>
+        <footer>
+            <div class="footer-container">
+              <!-- Customer Care Section -->
+              <div id="customer-care" class="footer-links">
+                <h3>Customer Care</h3>
+                <ul>
+                  <li><a href="https://help-sg.cottonon.com/hc/en-us">Help & Contact Us</a></li>
+                  <li><a href="https://cottonon.com/SG/information-about-returns.html">Returns & Exchanges</a></li>
+                  <li><a href="https://cottonon.com/SG/delivery-methods.html">Delivery</a></li>
+                  <li><a href="https://cottonon.com/SG/buynowpaylater.html">Buy Now, Pay Later</a></li>
+                  <li><a href="https://cottonon.com/SG/store-finder/">Find a Store</a></li>
+                </ul>
+              </div>
+          
+              <!-- About Us Section -->
+              <div id="about-us" class="footer-links">
+                <h3>About Us</h3>
+                <ul>
+                  <li><a href="http://www.cottonongroup.com.au/">The Cotton On Group</a></li>
+                  <li><a href="https://cottonon.com/SG/perks/welcome/">CottonOn & Co. Perks</a></li>
+                  <li><a href="https://cottonongroup.com.au/the-good-we-do/cotton-on-foundation/">Cotton On Foundation</a></li>
+                  <li><a href="http://cottonongroupcareers.com">Cotton On Careers</a></li>
+                  <li><a href="http://www.cottonongroup.com.au/communities">Communities</a></li>
+                  <li><a href="https://cottonon.com/SG/the-good/news/">Doing Good</a></li>
+                  <li><a href="http://www.cottonongroup.com/news/">News</a></li>
+                </ul>
+              </div>
+          
+              <!-- Our Brands Section -->
+              <div id="footer-brands" class="footer-links">
+                <h4>Our Brands</h4>
+                <div class="row">
+                    <!--brand Logos -->
+                    <div class="logo">
+                        <a href="https://cottonon.com/SG/search/?cgid=womens-new-in" title="Go to Cotton On">
+                            <img src="images\Cotton On.png" alt ="Cotton On Logo" class="logo-img">
+                        </a>
+                        <a href="https://cottonon.com/SG/cottononbody/" title="Go to Body">
+                            <img src="images\BODY.png" alt="Body Logo" class="logo-img">
+                        </a>
+                        <a href="https://cottonon.com/SG/cottononkids/" title="Go to Kids">
+                            <img src="images\Kids.png" alt="Kids Logo" class="logo-img">
+                        </a>
+                        <a href="https://cottonon.com/SG/co/women/womens-accessories/" title="Go to Rubi">
+                            <img src="images\RUBI.png" alt="Rubi Logo" class="logo-img">
+                        </a>
+                        <a href="https://cottonon.com/SG/typo/" title="Go to Typo">
+                            <img src="images\TYPO.png" alt="Typo Logo" class="logo-img">
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Social Media Icons -->
+            <div id="social-media-icons">
+                <a href="https://www.instagram.com/cottonon/?hl=en" title="Follow us on Instagram">
+                    <img src="images/Instagram_icon.png" alt="Instagram Icon">
+                </a>
+                <a href="https://x.com/cottonon?lang=en" title="Follow us on X">
+                    <img src="images/x logo.png" alt="X Icon">
+                </a>
+                <a href="https://www.facebook.com/cottonon/" title="Follow us on Facebook">
+                    <img src="images/facebook logo.png" alt="Facebook Icon">
+                </a>
+            </div>
+            <!-- Compliance Links Section -->
+            <div id="compliance-links-wrapper">
+                <div id="terms-and-conditions"><a href="https://cottonon.com/SG/terms.html">Terms & Conditions</a></div>
+                <div id="accessibility"><a href="https://cottonon.com/SG/accessibility.html">Accessibility</a></div>
+                <div id="privacy-policy"><a href="https://cottonon.com/SG/privacy-policy.html">Privacy Policy</a></div>
+              </div>
+          </footer>
     </div>
-</div>
-    </body>
+</body>
+</html>

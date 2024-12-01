@@ -1,4 +1,21 @@
-// drop down//
+//menu drop down//
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    menuToggle.addEventListener('click', function () {
+        // Toggle the visibility of the dropdown menu
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Optional: Close the menu if the user clicks outside
+    document.addEventListener('click', function (event) {
+        if (!menuToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
+});
+// filter drop down//
 function toggleDropdown(button) {
     // Get the dropdown content element
     const dropdownContent = button.nextElementSibling;
@@ -30,34 +47,59 @@ document.addEventListener("click", (e) => {
         });
     }
 });
-//price calculator//
-const quantityInput = document.getElementById('quantity');
-const increaseBtn = document.getElementById('increase');
-const decreaseBtn = document.getElementById('decrease');
-const pricePerItem = 20.00; // Price of a single item
-const totalPriceElement = document.getElementById('total-price');
+document.addEventListener("DOMContentLoaded", function () {
+    const productPage = document.querySelector(".product-page");
 
-// Function to update the total price
-function updateTotalPrice() {
-    const quantity = parseInt(quantityInput.value, 10) || 1; // Default to 1 if invalid input
-    const totalPrice = quantity * pricePerItem;
-    totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
-}
+    // Color selection
+    const colorBoxes = productPage.querySelectorAll(".color-box");
+    const selectedColorSpan = productPage.querySelector("#selected-color");
 
-// Increase quantity
-increaseBtn.addEventListener('click', () => {
-    quantityInput.value = parseInt(quantityInput.value, 10) + 1;
-    updateTotalPrice();
-});
+    colorBoxes.forEach((box) => {
+        box.addEventListener("click", () => {
+            colorBoxes.forEach((b) => b.classList.remove("active"));
+            box.classList.add("active");
+            const color = box.getAttribute("data-color");
+            selectedColorSpan.textContent = color;
+        });
+    });
 
-// Decrease quantity
-decreaseBtn.addEventListener('click', () => {
-    const currentQuantity = parseInt(quantityInput.value, 10);
-    if (currentQuantity > 1) {
-        quantityInput.value = currentQuantity - 1;
-        updateTotalPrice();
+    // Quantity and total price
+    const decreaseBtn = productPage.querySelector("#decrease");
+    const increaseBtn = productPage.querySelector("#increase");
+    const quantityInput = productPage.querySelector("#quantity");
+    const totalPriceEl = productPage.querySelector("#total-price");
+    const pricePerItem = 50;
+
+    function updateTotal() {
+        const quantity = parseInt(quantityInput.value, 10) || 1;
+        totalPriceEl.textContent = `Total: $${(pricePerItem * quantity).toFixed(2)}`;
     }
-});
 
-// Update total price when input changes directly
-quantityInput.addEventListener('input', updateTotalPrice);
+    decreaseBtn.addEventListener("click", function () {
+        let quantity = parseInt(quantityInput.value, 10) || 1;
+        if (quantity > 1) quantity--;
+        quantityInput.value = quantity;
+        updateTotal();
+    });
+
+    increaseBtn.addEventListener("click", function () {
+        let quantity = parseInt(quantityInput.value, 10) || 1;
+        quantity++;
+        quantityInput.value = quantity;
+        updateTotal();
+    });
+
+    quantityInput.addEventListener("input", updateTotal);
+
+    // Size selection
+    const sizeBoxes = productPage.querySelectorAll(".size-box");
+    const selectedSizeEl = productPage.querySelector("#selected-size");
+
+    sizeBoxes.forEach((box) => {
+        box.addEventListener("click", function () {
+            sizeBoxes.forEach((b) => b.classList.remove("active"));
+            this.classList.add("active");
+            selectedSizeEl.textContent = `Size: ${this.dataset.size}`;
+        });
+    });
+});

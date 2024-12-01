@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotton ON Revamp Website</title>
+    <link rel="stylesheet" href="Assignment 1 CSS.css">
+    <script src="Assignment 1 JS.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src= "images/Cotton_On_logo.png.png"alt="Brand Logo" class="Logo"> 
+        <nav class="main-nav">
+            <ul>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown-menu">
+          <a href="men.html">MEN</a>
+          <a href="women.html">WOMEN</a>
+          <a href="kids.html">KIDS</a>
+          <a href="about-us.html">ABOUT US</a>
+       </div>
+       <nav class="header-buttons">
+          <a href="index.html"><img src="images/home-button.png" alt="Home button" class="icon"></a>
+          <a href="Shopping Cart.html"><img src="images/shopping-cart-button.png" alt="Shopping Cart" class="icon"></a>
+          <button class="menu-toggle" aria-label="Toggle Menu"><img src="images/menu" alt="menu"width="45px" height="45px"></button> <!-- Hamburger Menu -->
+       </nav>
 
+    </header>
+    <!--shoping cart-->
+    <section class="shoping-cart-background">
+        <h1>Your Shopping Cart</h1>
+    <section class="shopping-cart">
+        <!-- Product List -->
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <p>1.</p>
+                <div class="product-image">
+                    <img src="images/chosen kid 1.jpg" alt="Product 1">
+                </div>
+                <div class="product-info">
+                    <h2>Poppy Short Sleeve Graphic Print Tee</h2>
+                    <p>Price: $55.00</p>
+                    <p>Color: White</p>
+                    <p>Size: S</p>
+                    <p>Quantity: 2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span id="subtotal">$110.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping:</span>
+                <span id="shipping">$10.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Tax (8%):</span>
+                <span id="tax">$9.60</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span id="total">$129.60</span>
+            </div>
+        <!-- Total Price -->
+        <div class="total-price">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+</section>
+    <footer>
+        <div class="footer-container">
+          <!-- Customer Care Section -->
+          <div id="customer-care" class="footer-links">
+            <h3>Customer Care</h3>
+            <ul>
+              <li><a href="https://help-sg.cottonon.com/hc/en-us">Help & Contact Us</a></li>
+              <li><a href="https://cottonon.com/SG/information-about-returns.html">Returns & Exchanges</a></li>
+              <li><a href="https://cottonon.com/SG/delivery-methods.html">Delivery</a></li>
+              <li><a href="https://cottonon.com/SG/buynowpaylater.html">Buy Now, Pay Later</a></li>
+              <li><a href="https://cottonon.com/SG/store-finder/">Find a Store</a></li>
+            </ul>
+          </div>
+      
+          <!-- About Us Section -->
+          <div id="about-us" class="footer-links">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="http://www.cottonongroup.com.au/">The Cotton On Group</a></li>
+              <li><a href="https://cottonon.com/SG/perks/welcome/">CottonOn & Co. Perks</a></li>
+              <li><a href="https://cottonongroup.com.au/the-good-we-do/cotton-on-foundation/">Cotton On Foundation</a></li>
+              <li><a href="http://cottonongroupcareers.com">Cotton On Careers</a></li>
+              <li><a href="http://www.cottonongroup.com.au/communities">Communities</a></li>
+              <li><a href="https://cottonon.com/SG/the-good/news/">Doing Good</a></li>
+              <li><a href="http://www.cottonongroup.com/news/">News</a></li>
+            </ul>
+          </div>
+      
+          <!-- Our Brands Section -->
+          <div id="footer-brands" class="footer-links">
+            <h4>Our Brands</h4>
+            <div class="row">
+                <!--brand Logos -->
+                <div class="logo">
+                    <a href="https://cottonon.com/SG/search/?cgid=womens-new-in" title="Go to Cotton On">
+                        <img src="images\Cotton On.png" alt ="Cotton On Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/cottononbody/" title="Go to Body">
+                        <img src="images\BODY.png" alt="Body Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/cottononkids/" title="Go to Kids">
+                        <img src="images\Kids.png" alt="Kids Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/co/women/womens-accessories/" title="Go to Rubi">
+                        <img src="images\RUBI.png" alt="Rubi Logo" class="logo-img">
+                    </a>
+                    <a href="https://cottonon.com/SG/typo/" title="Go to Typo">
+                        <img src="images\TYPO.png" alt="Typo Logo" class="logo-img">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social Media Icons -->
+        <div id="social-media-icons">
+            <a href="https://www.instagram.com/cottonon/?hl=en" title="Follow us on Instagram">
+                <img src="images/Instagram_icon.png" alt="Instagram Icon">
+            </a>
+            <a href="https://x.com/cottonon?lang=en" title="Follow us on X">
+                <img src="images/x logo.png" alt="X Icon">
+            </a>
+            <a href="https://www.facebook.com/cottonon/" title="Follow us on Facebook">
+                <img src="images/facebook logo.png" alt="Facebook Icon">
+            </a>
+        </div>
+        <!-- Compliance Links Section -->
+        <div id="compliance-links-wrapper">
+            <div id="terms-and-conditions"><a href="https://cottonon.com/SG/terms.html">Terms & Conditions</a></div>
+            <div id="accessibility"><a href="https://cottonon.com/SG/accessibility.html">Accessibility</a></div>
+            <div id="privacy-policy"><a href="https://cottonon.com/SG/privacy-policy.html">Privacy Policy</a></div>
+          </div>
+      </footer>
+</body>
+</html>

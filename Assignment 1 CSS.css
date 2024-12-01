@@ -835,7 +835,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#compliance-links-wrapper div {
+#compliance-links-wrapper section {
     flex: 1;
     margin: 5px;
 }
@@ -917,7 +917,7 @@ footer {
     height: 120px;  /* Adjust height as needed to see bottom alignment */
   }
   
-#compliance-links-wrapper div {
+#compliance-links-wrapper section {
     text-align: center;  /* Center the text inside each link */
     flex: 0 1 auto;  /* Allow the links to maintain their natural size */
   }
@@ -1037,6 +1037,7 @@ footer {
     .Background{
         max-width: 100%;
         height: auto;
+        text-align: center;
     }
     .background{
         max-width: 100%;
